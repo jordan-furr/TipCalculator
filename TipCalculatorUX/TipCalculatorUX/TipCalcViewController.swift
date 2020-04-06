@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  TipCalcViewController.swift
 //  TipCalculatorUX
 //
 //  Created by Jordan Furr on 4/6/20.
@@ -8,13 +8,10 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class TipCalcViewController: UIViewController {
 
     override func viewDidLoad() {
+        
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
-
-
 }
-

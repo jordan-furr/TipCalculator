@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		C53AEAC2243BDC8500AB9A84 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C53AEAC1243BDC8500AB9A84 /* AppDelegate.swift */; };
 		C53AEAC4243BDC8500AB9A84 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C53AEAC3243BDC8500AB9A84 /* SceneDelegate.swift */; };
-		C53AEAC6243BDC8500AB9A84 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C53AEAC5243BDC8500AB9A84 /* ViewController.swift */; };
 		C53AEAC9243BDC8500AB9A84 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C53AEAC7243BDC8500AB9A84 /* Main.storyboard */; };
 		C53AEACB243BDC8900AB9A84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C53AEACA243BDC8900AB9A84 /* Assets.xcassets */; };
 		C53AEACE243BDC8900AB9A84 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C53AEACC243BDC8900AB9A84 /* LaunchScreen.storyboard */; };
+		C53AEAD6243BDDB400AB9A84 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C53AEAD5243BDDB400AB9A84 /* Colors.xcassets */; };
+		C53AEAD9243BDDE200AB9A84 /* StyleGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = C53AEAD8243BDDE200AB9A84 /* StyleGuide.swift */; };
+		C53AEADB243BDDF500AB9A84 /* TipCalcViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C53AEADA243BDDF500AB9A84 /* TipCalcViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C53AEABE243BDC8500AB9A84 /* TipCalculatorUX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TipCalculatorUX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C53AEAC1243BDC8500AB9A84 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C53AEAC3243BDC8500AB9A84 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C53AEAC5243BDC8500AB9A84 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C53AEAC8243BDC8500AB9A84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C53AEACA243BDC8900AB9A84 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C53AEACD243BDC8900AB9A84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C53AEACF243BDC8900AB9A84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C53AEAD5243BDDB400AB9A84 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		C53AEAD8243BDDE200AB9A84 /* StyleGuide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleGuide.swift; sourceTree = "<group>"; };
+		C53AEADA243BDDF500AB9A84 /* TipCalcViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipCalcViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,25 @@
 		C53AEAC0243BDC8500AB9A84 /* TipCalculatorUX */ = {
 			isa = PBXGroup;
 			children = (
+				C53AEAC7243BDC8500AB9A84 /* Main.storyboard */,
+				C53AEADA243BDDF500AB9A84 /* TipCalcViewController.swift */,
+				C53AEAD8243BDDE200AB9A84 /* StyleGuide.swift */,
+				C53AEAD7243BDDD300AB9A84 /* Resources */,
+			);
+			path = TipCalculatorUX;
+			sourceTree = "<group>";
+		};
+		C53AEAD7243BDDD300AB9A84 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				C53AEAC1243BDC8500AB9A84 /* AppDelegate.swift */,
 				C53AEAC3243BDC8500AB9A84 /* SceneDelegate.swift */,
-				C53AEAC5243BDC8500AB9A84 /* ViewController.swift */,
-				C53AEAC7243BDC8500AB9A84 /* Main.storyboard */,
 				C53AEACA243BDC8900AB9A84 /* Assets.xcassets */,
 				C53AEACC243BDC8900AB9A84 /* LaunchScreen.storyboard */,
 				C53AEACF243BDC8900AB9A84 /* Info.plist */,
+				C53AEAD5243BDDB400AB9A84 /* Colors.xcassets */,
 			);
-			path = TipCalculatorUX;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C53AEACE243BDC8900AB9A84 /* LaunchScreen.storyboard in Resources */,
+				C53AEAD6243BDDB400AB9A84 /* Colors.xcassets in Resources */,
 				C53AEACB243BDC8900AB9A84 /* Assets.xcassets in Resources */,
 				C53AEAC9243BDC8500AB9A84 /* Main.storyboard in Resources */,
 			);
@@ -138,9 +153,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C53AEAC6243BDC8500AB9A84 /* ViewController.swift in Sources */,
 				C53AEAC2243BDC8500AB9A84 /* AppDelegate.swift in Sources */,
+				C53AEADB243BDDF500AB9A84 /* TipCalcViewController.swift in Sources */,
 				C53AEAC4243BDC8500AB9A84 /* SceneDelegate.swift in Sources */,
+				C53AEAD9243BDDE200AB9A84 /* StyleGuide.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,7 +302,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7V2Q4X6DAJ;
-				INFOPLIST_FILE = TipCalculatorUX/Info.plist;
+				INFOPLIST_FILE = TipCalculatorUX/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,7 +320,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7V2Q4X6DAJ;
-				INFOPLIST_FILE = TipCalculatorUX/Info.plist;
+				INFOPLIST_FILE = TipCalculatorUX/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
