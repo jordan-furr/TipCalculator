@@ -15,6 +15,8 @@
 		C53AEAD6243BDDB400AB9A84 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C53AEAD5243BDDB400AB9A84 /* Colors.xcassets */; };
 		C53AEAD9243BDDE200AB9A84 /* StyleGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = C53AEAD8243BDDE200AB9A84 /* StyleGuide.swift */; };
 		C53AEADB243BDDF500AB9A84 /* TipCalcViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C53AEADA243BDDF500AB9A84 /* TipCalcViewController.swift */; };
+		C53AEADD243BFB7A00AB9A84 /* TextFieldEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = C53AEADC243BFB7A00AB9A84 /* TextFieldEx.swift */; };
+		C53AEAE0243BFBBF00AB9A84 /* EnterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C53AEADF243BFBBF00AB9A84 /* EnterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		C53AEAD5243BDDB400AB9A84 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		C53AEAD8243BDDE200AB9A84 /* StyleGuide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleGuide.swift; sourceTree = "<group>"; };
 		C53AEADA243BDDF500AB9A84 /* TipCalcViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipCalcViewController.swift; sourceTree = "<group>"; };
+		C53AEADC243BFB7A00AB9A84 /* TextFieldEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldEx.swift; sourceTree = "<group>"; };
+		C53AEADF243BFBBF00AB9A84 /* EnterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +66,8 @@
 			children = (
 				C53AEAC7243BDC8500AB9A84 /* Main.storyboard */,
 				C53AEADA243BDDF500AB9A84 /* TipCalcViewController.swift */,
-				C53AEAD8243BDDE200AB9A84 /* StyleGuide.swift */,
+				C53AEADF243BFBBF00AB9A84 /* EnterViewController.swift */,
+				C53AEADE243BFB8100AB9A84 /* Helpers */,
 				C53AEAD7243BDDD300AB9A84 /* Resources */,
 			);
 			path = TipCalculatorUX;
@@ -79,6 +84,15 @@
 				C53AEAD5243BDDB400AB9A84 /* Colors.xcassets */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		C53AEADE243BFB8100AB9A84 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				C53AEAD8243BDDE200AB9A84 /* StyleGuide.swift */,
+				C53AEADC243BFB7A00AB9A84 /* TextFieldEx.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,6 +171,8 @@
 				C53AEADB243BDDF500AB9A84 /* TipCalcViewController.swift in Sources */,
 				C53AEAC4243BDC8500AB9A84 /* SceneDelegate.swift in Sources */,
 				C53AEAD9243BDDE200AB9A84 /* StyleGuide.swift in Sources */,
+				C53AEADD243BFB7A00AB9A84 /* TextFieldEx.swift in Sources */,
+				C53AEAE0243BFBBF00AB9A84 /* EnterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,7 +248,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -286,7 +302,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
