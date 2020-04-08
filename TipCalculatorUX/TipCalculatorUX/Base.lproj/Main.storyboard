@@ -90,9 +90,6 @@
                                         <state key="normal" title="15%">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
-                                        <connections>
-                                            <action selector="fifteenTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="At0-hl-aBB"/>
-                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dhw-Y5-GZw">
                                         <rect key="frame" x="75" y="0.0" width="75" height="48"/>
@@ -101,9 +98,6 @@
                                         <state key="normal" title="18%">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
-                                        <connections>
-                                            <action selector="eighteentapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BFy-VD-ynx"/>
-                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FzE-Yt-cyb">
                                         <rect key="frame" x="150" y="0.0" width="75" height="48"/>
@@ -132,94 +126,51 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Final Total" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T3L-Fx-7mm">
-                                <rect key="frame" x="16" y="398.5" width="87.5" height="21.5"/>
+                                <rect key="frame" x="16" y="473.5" width="87.5" height="21.5"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20 %" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KUH-pg-Bbv">
-                                <rect key="frame" x="277" y="142" width="84" height="42"/>
+                                <rect key="frame" x="277" y="172" width="84" height="42"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="35"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <slider opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="20" minValue="0.0" maxValue="50" translatesAutoresizingMaskIntoConstraints="NO" id="XQK-Wi-NGt">
-                                <rect key="frame" x="14" y="308.5" width="347" height="31"/>
+                            <slider opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="20" minValue="0.0" maxValue="40" translatesAutoresizingMaskIntoConstraints="NO" id="XQK-Wi-NGt">
+                                <rect key="frame" x="14" y="368.5" width="347" height="31"/>
                                 <color key="minimumTrackTintColor" name="JFbrown"/>
                                 <color key="thumbTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="sliderSlid:" destination="BYZ-38-t0r" eventType="valueChanged" id="bua-HZ-Ego"/>
+                                </connections>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meal Cost" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nvJ-Ac-DB1">
-                                <rect key="frame" x="16" y="249.5" width="116" height="29"/>
+                                <rect key="frame" x="16" y="299.5" width="116" height="29"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="24"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tip" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jrj-9x-bIr">
-                                <rect key="frame" x="16" y="142" width="52" height="42"/>
+                                <rect key="frame" x="16" y="172" width="52" height="42"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="35"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$ X. XX" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B83-G7-djj">
-                                <rect key="frame" x="279.5" y="398.5" width="81.5" height="29"/>
+                                <rect key="frame" x="279.5" y="470" width="81.5" height="29"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="24"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="czB-vu-1TJ">
-                                <rect key="frame" x="0.0" y="611" width="375" height="56"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jDW-jg-wlw">
-                                        <rect key="frame" x="0.0" y="0.0" width="94" height="56"/>
-                                        <color key="backgroundColor" name="JFyellow"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="jDW-jg-wlw" secondAttribute="height" multiplier="47:28" id="zOw-Y3-zRU"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="18"/>
-                                        <state key="normal" title="17.76%">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nCB-Pk-Xe1">
-                                        <rect key="frame" x="94" y="0.0" width="93.5" height="56"/>
-                                        <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="18"/>
-                                        <state key="normal" title="19.99%">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hzY-Fd-3Lq">
-                                        <rect key="frame" x="187.5" y="0.0" width="94" height="56"/>
-                                        <color key="backgroundColor" red="0.047782245307916589" green="0.53143138080298336" blue="0.82695510786802029" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="18"/>
-                                        <state key="normal" title="20.20%">
-                                            <color key="titleColor" red="1" green="0.99183522570000004" blue="0.91772089499999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </state>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EVf-Ex-2Rl">
-                                        <rect key="frame" x="281.5" y="0.0" width="93.5" height="56"/>
-                                        <color key="backgroundColor" red="0.57733490080328931" green="0.81006517694558144" blue="0.8901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="18"/>
-                                        <state key="normal" title="21%">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                    </button>
-                                </subviews>
-                            </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fun percentages:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kid-TF-8qB">
-                                <rect key="frame" x="14" y="578" width="124.5" height="19"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tip:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iJa-Oc-MYq">
-                                <rect key="frame" x="16" y="118" width="28.5" height="20"/>
+                                <rect key="frame" x="16" y="148" width="28.5" height="20"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meal:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vPO-Fj-FAU">
-                                <rect key="frame" x="16" y="224" width="42" height="20"/>
+                                <rect key="frame" x="16" y="274" width="42" height="20"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -227,29 +178,24 @@
                         </subviews>
                         <color key="backgroundColor" name="JFnavy"/>
                         <constraints>
-                            <constraint firstItem="Jrj-9x-bIr" firstAttribute="top" secondItem="r0d-KX-l8r" secondAttribute="bottom" constant="50" id="5BA-zS-C9d"/>
+                            <constraint firstItem="Jrj-9x-bIr" firstAttribute="top" secondItem="r0d-KX-l8r" secondAttribute="bottom" constant="80" id="5BA-zS-C9d"/>
                             <constraint firstItem="vPO-Fj-FAU" firstAttribute="leading" secondItem="Jrj-9x-bIr" secondAttribute="leading" id="AY6-Rc-2yU"/>
                             <constraint firstItem="nvJ-Ac-DB1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Aep-FJ-3i9"/>
-                            <constraint firstItem="jDW-jg-wlw" firstAttribute="top" secondItem="Kid-TF-8qB" secondAttribute="bottom" constant="14" id="Av4-cN-V4q"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="B83-G7-djj" secondAttribute="trailing" constant="14" id="BSu-i6-hfU"/>
                             <constraint firstItem="nvJ-Ac-DB1" firstAttribute="top" secondItem="vPO-Fj-FAU" secondAttribute="bottom" constant="5.5" id="BTq-sn-F0h"/>
-                            <constraint firstItem="T3L-Fx-7mm" firstAttribute="top" secondItem="XQK-Wi-NGt" secondAttribute="bottom" constant="60" id="Dws-Bu-M4R"/>
+                            <constraint firstItem="T3L-Fx-7mm" firstAttribute="top" secondItem="XQK-Wi-NGt" secondAttribute="bottom" constant="75" id="Dws-Bu-M4R"/>
                             <constraint firstItem="T3L-Fx-7mm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Isj-Wu-84v"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="czB-vu-1TJ" secondAttribute="bottom" id="JQu-U4-O7b"/>
-                            <constraint firstItem="XQK-Wi-NGt" firstAttribute="top" secondItem="nvJ-Ac-DB1" secondAttribute="bottom" constant="30" id="KNH-qF-EQQ"/>
+                            <constraint firstItem="XQK-Wi-NGt" firstAttribute="top" secondItem="nvJ-Ac-DB1" secondAttribute="bottom" constant="40" id="KNH-qF-EQQ"/>
                             <constraint firstItem="iJa-Oc-MYq" firstAttribute="leading" secondItem="Jrj-9x-bIr" secondAttribute="leading" id="LrL-ht-mgv"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="czB-vu-1TJ" secondAttribute="trailing" id="MCn-tA-dAr"/>
                             <constraint firstItem="YWo-SN-YBh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Nw8-gU-Gj2"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YWo-SN-YBh" secondAttribute="trailing" id="Uib-Lx-VXx"/>
                             <constraint firstItem="nvJ-Ac-DB1" firstAttribute="leading" secondItem="Jrj-9x-bIr" secondAttribute="leading" id="a4C-dS-EWc"/>
-                            <constraint firstItem="czB-vu-1TJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="cIN-8E-klf"/>
                             <constraint firstItem="YWo-SN-YBh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="cfl-gO-UxL"/>
+                            <constraint firstItem="B83-G7-djj" firstAttribute="centerY" secondItem="T3L-Fx-7mm" secondAttribute="centerY" id="cjB-qJ-mvu"/>
                             <constraint firstItem="XQK-Wi-NGt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="e7B-o3-60b"/>
                             <constraint firstItem="XQK-Wi-NGt" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="fXO-NS-ZCr"/>
-                            <constraint firstItem="Kid-TF-8qB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="14" id="hwA-0I-oMj"/>
-                            <constraint firstItem="vPO-Fj-FAU" firstAttribute="top" secondItem="Jrj-9x-bIr" secondAttribute="bottom" constant="40" id="pbU-tq-0dT"/>
+                            <constraint firstItem="vPO-Fj-FAU" firstAttribute="top" secondItem="Jrj-9x-bIr" secondAttribute="bottom" constant="60" id="pbU-tq-0dT"/>
                             <constraint firstItem="KUH-pg-Bbv" firstAttribute="centerY" secondItem="Jrj-9x-bIr" secondAttribute="centerY" id="qj0-hT-fVK"/>
-                            <constraint firstItem="B83-G7-djj" firstAttribute="top" secondItem="XQK-Wi-NGt" secondAttribute="bottom" constant="60" id="xPH-n3-A4a"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KUH-pg-Bbv" secondAttribute="trailing" constant="14" id="xdm-q2-ixh"/>
                             <constraint firstItem="Jrj-9x-bIr" firstAttribute="top" secondItem="iJa-Oc-MYq" secondAttribute="bottom" constant="4" id="ylG-3P-beZ"/>
                             <constraint firstItem="Jrj-9x-bIr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="zsg-sj-Cao"/>
@@ -262,13 +208,16 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="eighteen" destination="Dhw-Y5-GZw" id="aKn-sc-u3C"/>
+                        <outlet property="fifteen" destination="r0d-KX-l8r" id="SvK-CW-1Yw"/>
                         <outlet property="finalPriceLabel" destination="B83-G7-djj" id="vef-y2-yu7"/>
-                        <outlet property="funStackView" destination="czB-vu-1TJ" id="RVp-nF-miT"/>
                         <outlet property="mealCostLabel" destination="nvJ-Ac-DB1" id="p0L-vc-Ti1"/>
                         <outlet property="percentLabel" destination="KUH-pg-Bbv" id="qDJ-1h-fcW"/>
                         <outlet property="percentbutton" destination="FzE-Yt-cyb" id="wzM-yS-mOJ"/>
                         <outlet property="sliderBar" destination="XQK-Wi-NGt" id="dsa-7I-oYo"/>
                         <outlet property="tipLabel" destination="Jrj-9x-bIr" id="58X-cU-Wyp"/>
+                        <outlet property="twentyfive" destination="LbL-pV-u2H" id="Dq3-nu-L5X"/>
+                        <outlet property="twentytwo" destination="6UP-4o-tWw" id="9TC-Ud-9wU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -311,9 +260,6 @@
         </namedColor>
         <namedColor name="JFnavy">
             <color red="0.20000000000000001" green="0.19607843137254902" blue="0.30588235294117649" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="JFyellow">
-            <color red="0.94117647058823528" green="0.7686274509803922" blue="0.22745098039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>
